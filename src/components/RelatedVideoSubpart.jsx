@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class RelatedVideoSubpart extends React.Component{
 	
 	render(){
-
+		
 		return(
 
 			<div class="row" style={{marginLeft:'1rem', marginTop:'2rem'}}>
@@ -23,7 +23,7 @@ class RelatedVideoSubpart extends React.Component{
 
 					<div class="row">
 
-						<h4 style={{marginTop:'0.2rem'}}>Lorem Ipsum dolor sit amet consecteur</h4>
+						<h4 style={{marginTop:'0.2rem', fontSize:'2em'}}>Lorem Ipsum dolor sit amet consecteur</h4>
 
 					</div>
 
@@ -37,13 +37,13 @@ class RelatedVideoSubpart extends React.Component{
 
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style={{paddingLeft:'0rem',paddingRight:0}}>
 
-							<h3 style={{marginTop:0}}><small>Channel Name</small></h3>
+							<h3 style={{marginTop:'-2px', fontSize:'2em'}}><small>Channel Name</small></h3>
 
 						</div>
 
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style={{paddingLeft:'0rem',paddingRight:0}}>
 
-							<h3 style={{marginTop:0}}>
+							<h3 style={{marginTop:'-2px', fontSize:'2em'}}>
 
 								<small>91.2K
 

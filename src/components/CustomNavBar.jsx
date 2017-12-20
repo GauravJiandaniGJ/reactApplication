@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+require('./testing.css')
 class CustomNavBar extends React.Component{
 
 	render(){
@@ -14,10 +14,16 @@ class CustomNavBar extends React.Component{
 				<div>
 
 
-					<nav class="navbar navbar-default">
+					<nav class="navbar navbar-default" style={{marginBottom:0}}>
 						  <div className="container-fluid" style={divStyle1}>
 						    
 						    <div class="navbar-header" style={{marginLeft:100}}>
+						    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						            <span class="sr-only">Toggle navigation</span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						        </button>
 						      <a class="navbar-brand" href="#" style={{paddingTop:10}}><img src="../../logo.jpg"/></a>
 						    </div>
 
