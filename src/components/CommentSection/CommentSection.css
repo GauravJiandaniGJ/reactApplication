@@ -13,3 +13,7 @@ View all comments h4 tag
 .hfour{
 	font-size: 2em;
 }
+
+.hfour:hover{
+	cursor: pointer;
+}

@@ -59,8 +59,7 @@ class CommentSubPart extends React.Component{
 				  								  	  				
 			  	  				</span>
 
-
-				  				&nbsp;&nbsp;Like 
+				  				<span class="like_btn">&nbsp;&nbsp;Like</span> 
 
 				  			</small>
 

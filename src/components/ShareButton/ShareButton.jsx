@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 require('../testing.css');
+require('./ShareButton.css');
 
 class ShareButton extends React.Component{
 
@@ -12,11 +13,11 @@ class ShareButton extends React.Component{
 
 	  		  	<a href="#">
 	  		  	
-		  		  	<div style={{marginTop:'1.6rem', marginLeft:'-4rem', paddingLeft:'0rem', paddingRight:'0rem', paddingTop:'0.4rem', paddingBottom:'0.4rem', borderRadius:0, width:'80%', height:'50%', fontSize:'2rem'}}>
+		  		  	<div class="div_share">
 			  		  	
-		  		  		<span class="glyphicon glyphicon-share-alt" style={{top:'0.22rem',color:'#fb583e', fontSize:'1.8em'}}></span>
+		  		  		<span class="glyphicon glyphicon-share-alt icon_share" ></span>
 
-		  		  		<span style={{color:'#fb583e', fontSize:'1.6em'}}>&nbsp;Share</span>
+		  		  		<span class="text_share">&nbsp;Share</span>
 		  		  	
 		  		  	</div>
   			

@@ -76,7 +76,7 @@ class Content extends React.Component{
 
 	  	  		</div>
 
-	  	  		<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 img_div" >
+	  	  		<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 image_div" >
 
 	  	  			<div class="row">
 
@@ -115,7 +115,17 @@ class Content extends React.Component{
 
 	  	  				<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4 div_tooltip">
 	  	  				
-	  	  					<span class="tooltiptext">Rs. 1000</span>
+	  	  					<span class="tooltiptext">
+
+	  	  						Rs. 1000
+
+	  	  						<span class="icon_subscribe_tooltip">
+
+	  	  							Access all Content of this channel at only Rs. 1000
+
+	  	  						</span>
+
+	  	  					</span>
 
 	  	  				</div>
 

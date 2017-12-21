@@ -1,0 +1,42 @@
+/**************************
+first div after <a> tag
+*************************/
+.div_share{
+	margin-top: 1.6rem;
+	margin-left: -4rem;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	border-radius: 0;
+	width: 80%;
+	height: 50%;
+	font-size: 2rem;
+}
+
+/*********************
+span - icon of share
+*********************/
+.icon_share{
+	top:0.55rem;
+	color: #fb583e;
+	font-size: 1.8em;
+}
+
+/***********************
+span - text of share
+***********************/
+.text_share{
+	color:#fb583e;
+	font-size: 1.6em;
+}
+
+.div_share:hover .icon_share{
+	color: white;
+	background-color:#fb583e;
+}
+
+.div_share:hover .text_share{
+	color: white;
+	background-color:#fb583e; 
+}

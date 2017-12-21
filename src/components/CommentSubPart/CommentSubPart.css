@@ -68,3 +68,11 @@ h5 tag of date
 	margin-left: 1.4rem;
 	font-size: 2vmax;
 }
+
+/***********
+span - like button on comments
+***********/
+.like_btn:hover{
+	cursor: pointer;
+	color: blue;
+}

@@ -17,9 +17,7 @@ class BigText extends React.Component{
 	}
 
 	showMoreText(){
-
 		
-
 		this.setState({showLessTextHtml: !this.state.showLessTextHtml, firsttime: true});
 
 	}

@@ -20,14 +20,26 @@ class AddComment extends React.Component{
 		  	  		
 		  	  		</div>
 
-		  	  		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col_10">
+		  	  		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col_8">
 					  		  	
-			  		  	<div class="comment_div">
+			  		  	<input type="text" class="comment_div" placeholder="Add Your Comment..">
 				  		  	
-			  		  		<h4 class="hfour"><small>Add Your Comment..</small></h4>
-			  		  	
-			  		  	</div>
+			  		  	</input>
 				  			
+		  	  		</div>
+
+		  	  		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col_2">
+
+			  		  	<a href="#">
+			  		  	
+				  		  	<div class="div_comment">
+					  		  	
+				  		  		<span class="">Comment</span>
+				  		  	
+				  		  	</div>
+		  			
+		  			  	</a>
+
 		  	  		</div>
 
 				</div>		  	
