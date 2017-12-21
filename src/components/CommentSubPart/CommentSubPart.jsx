@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-require('./testing.css')
+require('../testing.css')
 
 class CommentSubPart extends React.Component{
 

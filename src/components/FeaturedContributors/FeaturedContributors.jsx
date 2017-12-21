@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FeaturedContributorsSubpart from './FeaturedContributorsSubpart.jsx'
+import FeaturedContributorsSubpart from '../FeaturedContributorsSubpart/FeaturedContributorsSubpart.jsx'
 require('./FeaturedContributors_caraosel.css')
 
 class FeaturedContributors extends React.Component{

@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SingleSingleContributor from './SingleSingleContributor.jsx';
-import BigText from './BigText.jsx';
+import SingleSingleContributor from '../SingleSingleContributor/SingleSingleContributor.jsx';
+import BigText from '../BigText/BigText.jsx';
 
 require('./Content.css');
-require('./testing.css');
+require('../testing.css');
 
 class Content extends React.Component{
 

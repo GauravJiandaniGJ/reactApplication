@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem, Grid, Row, Col, code } from 'react-bootstrap';
 import CustomNavBar from './CustomNavBar.jsx'
-import RelatedVideo from './RelatedVideo.jsx'
-import BookmarkButton from './BookmarkButton.jsx'
-import FeaturedContributors from './FeaturedContributors.jsx'
-import Content from './Content.jsx'
-import LikeButton from './LikeButton.jsx'
-import ShareButton from './ShareButton.jsx'
-import CommentSection from './CommentSection.jsx'
-import RecommendedChannels from './RecommendedChannels.jsx'
-import BigText from './BigText.jsx'
+import RelatedVideo from './RelatedVideo/RelatedVideo.jsx'
+import BookmarkButton from './BookmarkButton/BookmarkButton.jsx'
+import FeaturedContributors from './FeaturedContributors/FeaturedContributors.jsx'
+import Content from './Content/Content.jsx'
+import LikeButton from './LikeButton/LikeButton.jsx'
+import ShareButton from './ShareButton/ShareButton.jsx'
+import CommentSection from './CommentSection/CommentSection.jsx'
+import RecommendedChannels from './RecommendedChannels/RecommendedChannels.jsx'
+import BigText from './BigText/BigText.jsx'
 require('./testing.css')
 // import { Player, BigPlayButton } from 'video-react';
 

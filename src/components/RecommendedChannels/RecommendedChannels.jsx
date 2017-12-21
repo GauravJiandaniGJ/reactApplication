@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RecommendedChannelsSubPart from './RecommendedChannelsSubPart.jsx';
+import RecommendedChannelsSubPart from '../RecommendedChannelsSubPart/RecommendedChannelsSubPart.jsx';
 
-require('./testing.css')
+require('../testing.css')
 
 class RecommendedChannels extends React.Component{
 

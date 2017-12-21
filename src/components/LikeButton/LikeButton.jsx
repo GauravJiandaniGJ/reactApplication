@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-require('./testing.css');
+require('../testing.css');
 
 class LikeButton extends React.Component{
 

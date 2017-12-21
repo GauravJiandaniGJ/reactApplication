@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CommentSubPart from './CommentSubPart.jsx';
-import AddComment from './AddComment.jsx';
+import CommentSubPart from '../CommentSubPart/CommentSubPart.jsx';
+import AddComment from '../AddComment/AddComment.jsx';
 
-require('./testing.css')
+require('../testing.css')
 
 class CommentSection extends React.Component{
 

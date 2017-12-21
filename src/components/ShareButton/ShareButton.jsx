@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-require('./testing.css');
+require('../testing.css');
 
 class ShareButton extends React.Component{
 

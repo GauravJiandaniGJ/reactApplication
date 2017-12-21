@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RelatedVideoSubpart from './RelatedVideoSubpart.jsx';
+import RelatedVideoSubpart from '../RelatedVideoSubpart/RelatedVideoSubpart.jsx';
 
-require('./testing.css')
+require('../testing.css')
 
 class RelatedVideo extends React.Component{
 
