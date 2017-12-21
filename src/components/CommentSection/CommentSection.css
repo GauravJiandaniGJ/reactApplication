@@ -1,0 +1,15 @@
+/**************
+Row of h4
+*************/
+.hfour_row{
+text-align: center;
+margin-top: 1.5rem;
+margin-bottom: 1rem;
+}
+
+/*************
+View all comments h4 tag
+************/
+.hfour{
+	font-size: 2em;
+}

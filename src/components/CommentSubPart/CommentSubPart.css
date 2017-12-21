@@ -1,0 +1,70 @@
+/*************
+image div tag
+************/
+.img_div{
+	text-align: left;
+	margin-right: 1rem;
+	margin-left: 1.3rem;
+}
+
+
+/*************
+image tag
+************/
+.img_tag{
+	padding-left: 4rem;
+}
+style={{paddingLeft:'4rem'}}
+
+
+/*************
+details of comment
+************/
+.details_div{
+	margin-top: 0.7rem;
+	margin-left: 3rem;
+	padding-right: 3rem;
+}
+
+/************
+h4 tag of name
+*************/
+.hfour_tag{
+	margin-top: 0;
+	margin-left: 1.4rem;
+	font-size: 2vmax;
+	margin-bottom: 0.4rem;
+}
+/************
+category of medicine.. e.g. Internal medicine
+*************/
+.category_of_medicine{
+	padding-left: 1rem;
+	color: blue;
+}
+
+/************
+h4 comment
+*************/
+.hfour_comment{
+	margin-top: 0;
+	margin-left: 1.4rem;
+	padding-right: 5rem;
+	font-size: 2vmax;
+}
+
+/***********
+row of time and date of comment
+***********/
+.row_date{
+	margin-bottom: 1.6rem;
+}
+
+/***********
+h5 tag of date
+***********/
+.hfive{
+	margin-top: 0;
+	margin-left: 1.4rem;
+	font-size: 2vmax;
+}

@@ -4,6 +4,7 @@ import CommentSubPart from '../CommentSubPart/CommentSubPart.jsx';
 import AddComment from '../AddComment/AddComment.jsx';
 
 require('../testing.css')
+require('./CommentSection.css')
 
 class CommentSection extends React.Component{
 
@@ -15,9 +16,9 @@ class CommentSection extends React.Component{
 
 				<AddComment />
 
-				<div class="row" style={{textAlign:'center', marginTop:'1rem', marginBottom:'1rem'}}>
+				<div class="row hfour_row" >
 
-	  	  			<h4 style={{fontSize:'2em'}}>View all 234 comments</h4>
+	  	  			<h4 class="hfour">View all 234 comments</h4>
 
 	  	  		</div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 require('../testing.css')
+require('./BookmarkButton.css')
 
 class BookmarkButton extends React.Component{
 
@@ -12,11 +13,11 @@ class BookmarkButton extends React.Component{
 
 	  		  	<a href="#">
 	  		  	
-		  		  	<div style={{textAlign:'center', border:'2px solid',borderColor:'#fb583e', paddingLeft:'0rem', paddingRight:'0rem', paddingTop:'0.4rem', paddingBottom:'0.4rem', borderRadius:0, width:'80%', height:'50%', fontSize:'1.5em'}}>
+		  		  	<div class="div_tag">
 			  		  	
-		  		  		<span class="glyphicon glyphicon-star-empty" style={{top:'0.22rem',color:'#fb583e', fontSize:'100%'}}></span>
+		  		  		<span class="glyphicon glyphicon-star-empty icon"></span>
 
-		  		  		<span style={{color:'#fb583e', fontSize:'100%'}}>&nbsp;Bookmark</span>
+		  		  		<span class="text">&nbsp;Bookmark</span>
 		  		  	
 		  		  	</div>
   			

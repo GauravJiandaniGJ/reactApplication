@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 require('../testing.css')
+require('./BigText.css')
 
 class BigText extends React.Component{
 
@@ -46,7 +47,7 @@ class BigText extends React.Component{
 
 			console.log('inside first if')
 
-			text = <small style={{fontSize:'2em'}}> {content.substring(0,120)} <button onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>more</button> </small>;
+			text = <small class="text_size"> {content.substring(0,120)} <button onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>more</button> </small>;
 
 			this.state.showLessTextHtml = true
 
@@ -62,13 +63,13 @@ class BigText extends React.Component{
 
 			var t = content
 			
-			text = <small style={{fontSize:'2em'}}> {t.substring(0,120)} <button onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>more</button> </small>;
+			text = <small class="text_size"> {t.substring(0,120)} <button onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>more</button> </small>;
 
 		}else{
 
 			console.log('last else')
 
-			content = <small style={{fontSize:'2em'}}> {content} <button onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>less</button></small>
+			content = <small class="text_size"> {content} <button onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>less</button></small>
 
 		}
 

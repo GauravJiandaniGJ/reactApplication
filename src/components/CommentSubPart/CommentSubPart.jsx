@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 require('../testing.css')
+require('./CommentSubPart.css')
 
 class CommentSubPart extends React.Component{
 
@@ -11,21 +12,21 @@ class CommentSubPart extends React.Component{
 
 			<div className="">
 
-	  	  		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style={{textAlign:'left', marginRight:'1rem', marginLeft:'1.3rem'}}>
+	  	  		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 img_div" >
 
-	  	  			<img src="../../mahadev_contributor.jpg" class="img-circle" style={{paddingLeft:'4rem'}} />
+	  	  			<img src="../../mahadev_contributor.jpg" class="img-circle img_tag"/>
 	  	  		
 	  	  		</div>
 
-	  	  		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style={{marginTop:'0.7rem', marginLeft:'3rem', paddingRight:'3rem'}}>
+	  	  		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 details_div" >
 				  	
 				  	<div class="row">
 
-				  		<h4 style={{marginTop:0, marginLeft:'1.4rem', fontSize:'2vmax', marginBottom:'0.4rem'}}>
+				  		<h4 class="hfour_tag">
 
 				  		<b>Dr. Govind Verma</b>
 
-				  			<small style={{paddingLeft:'1rem', color:'blue'}}>Internal Medicine</small>
+				  			<small class="category_of_medicine">Internal Medicine</small>
 
 				  		</h4>
 
@@ -33,7 +34,7 @@ class CommentSubPart extends React.Component{
 
 				  	<div class="row">
 
-				  		<h4 style={{marginTop:0,  marginLeft:'1.4rem', paddingRight:'5rem', fontSize:'2vmax'}}>
+				  		<h4 class="hfour_comment">
 
 				  			<small>
 
@@ -46,9 +47,9 @@ class CommentSubPart extends React.Component{
 
 				  	</div>
 
-				  	<div class="row" style={{marginBottom:'1.6rem'}}>
+				  	<div class="row row_date" >
 
-				  		<h5 style={{marginTop:0,  marginLeft:'1.4rem', fontSize:'2vmax'}}>
+				  		<h5 class="hfive">
 
 				  			<small>
 

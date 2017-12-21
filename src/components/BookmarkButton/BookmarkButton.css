@@ -1,0 +1,32 @@
+/*************
+div tag
+************/
+
+.div_tag{
+	text-align: center;
+	border: 2px solid #fb583e;
+	padding-left: 0;
+	padding-right:0;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	width: 80%;
+	height: 50%;
+	font-size: 1.5em;
+}
+
+/***********
+glphicon icon
+**********/
+.icon{
+	top:0.22rem;
+	color:#fb583e;
+	font-size: 100%;
+}
+
+/************
+Bookmark Text
+***********/
+.text{
+	color:#fb583e;
+	font-size: 100%;
+}
