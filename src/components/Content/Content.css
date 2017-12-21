@@ -24,3 +24,148 @@
     border-style: solid;
     border-color: transparent #c3c1c1 transparent transparent;
 }
+
+/********************
+first row - like this video content
+********************/
+.first_row{
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+
+/********************
+h1 tag containing text
+********************/
+.hone_tag{
+    font-size: 3vmax;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/********************
+row containing whats included text
+********************/
+.row_whats{
+    text-align: left;
+    margin-left: 4rem;
+    font-size: 2vmax;
+}
+
+
+/********************
+row cantaining list of items that are included
+********************/
+.row_list{
+    text-align: left;
+    margin-left: 1rem;
+    width: 100%;
+    font-size: 120%;
+}
+
+
+/********************
+row containing items
+********************/
+.row_items{
+    margin-bottom: 0.5rem;
+    font-size: 2vmax;
+}
+
+/********************
+contributors row
+********************/
+.row_contributors{
+    text-align: left;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+/***************
+row containing no. of items
+****************/
+.div_noOfItems{
+    border: 1px solid white;
+    text-align: center;
+    background-color: #e2e4e6;
+    color: black;
+    border-radius: 20px;
+    margin-top: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 60%;
+    height: 50%;
+    font-size: 100%;
+}
+
+
+/****************
+span containig number
+****************/
+.span_items{
+    font-size: 1em;
+    color: black;
+    text-align: center;
+}
+
+
+/*****************
+div of 5 containing channel and image
+*****************/
+.image_div{
+    margin-bottom: 2rem;
+}
+
+
+/*****************
+h4 - Channel name and subscriber
+*****************/
+.hfour_channel{
+    margin-bottom: 0.02rem;
+    font-size: 2em;
+}
+
+
+/*****************
+div_subscribe div to subscribe
+*****************/
+.div_subscribe{
+    text-align: center;
+    background-color: #fb583e;
+    border: 2px solid #fb583e;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 50%;
+    font-size: 2rem;
+}
+
+/*****************
+span - icon and subscribe text
+*****************/
+.icon_subscribe{
+    top:0.14rem;
+    color: white;
+    font-size: 100%;
+}
+
+
+/*****************
+div - of tooltip
+*****************/
+.div_tooltip{
+    padding-top: 0.4rem;
+    padding-left: 0;
+    text-align: left;
+}

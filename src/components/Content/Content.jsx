@@ -14,35 +14,39 @@ class Content extends React.Component{
 
 			<div>
 
-	  	  		<div class="row" style={{textAlign:'center', marginLeft:'2rem', marginRight:'2rem', marginTop:'1rem'}}>
+	  	  		<div class="row first_row" >
 
-	  	  			<h1 style={{fontSize:'3vmax', marginLeft:'7rem', marginRight:'7rem', marginTop:'2rem', marginBottom:'2rem'}}>Like this Video? Get Access to all the content of this Channel!</h1>
+	  	  			<h1 class="hone_tag">Like this Video? Get Access to all the content of this Channel!</h1>
 
 	  	  		</div>
 
-	  	  		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7" style={{}}>
+	  	  		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7" >
 
-	  	  			<div class="row" style={{textAlign:'left', marginLeft:'4rem', fontSize:'2vmax'}}>
+	  	  			<div class="row row_whats" >
 
 	  	  				<h3><b>What's included?</b></h3>
 
 	  	  			</div>
 
-	  	  			<div class="row" style={{textAlign:'left', marginLeft:'1rem', width:'100%', fontSize:'120%'}}>
+	  	  			<div class="row row_list">
 
 	  	  				<ul>
 
-	  	  					<li style={{marginBottom:'0.5rem', fontSize:'2vmax'}}>17 lectures in 4 categories</li>
+	  	  					<li class="row_items">17 lectures in 4 categories</li>
 
-	  	  					<li style={{marginBottom:'0.5rem', fontSize:'2vmax'}}>Lectures from renowned doctors from India</li>
+	  	  					<li class="row_items">Lectures from renowned doctors from India</li>
 	  	  					
-	  	  					<li style={{marginBottom:'0.5rem', fontSize:'2vmax'}}><BigText content_data="Life Time access to new Content" /></li>
+	  	  					<li class="row_items">
+
+	  	  						<BigText content_data="Life Time access to new Content" />
+
+	  	  					</li>
 
 	  	  				</ul>
 
 	  	  			</div>
 
-	  	  			<div class="row" style={{textAlign:'left', marginLeft:'4rem', marginBottom:'4rem'}}>
+	  	  			<div class="row row_contributors">
 
 	  	  				<h3 ><b>Contributors</b></h3>
 
@@ -56,9 +60,9 @@ class Content extends React.Component{
 
 		  	  						<a href="#">
 
-		  	  							<div style={{border:'1px solid white', textAlign:'center', backgroundColor:'#e2e4e6', color:'black', borderRadius:20, marginTop:'1rem', paddingLeft:'0rem', paddingRight:'0rem', paddingTop:'0.4rem', paddingBottom:'0.4rem', width:'60%', height:'50%', fontSize:'100%'}}>
+		  	  							<div class="div_noOfItems">
 									  		  	
-								  		  		<span style={{fontSize:'1em', color:'black', textAlign:'center'}}><b>&nbsp;+8</b></span>
+								  		  		<span class="span_items"><b>&nbsp;+8</b></span>
 								  		  	
 								  		  	</div>
 						  			
@@ -72,7 +76,7 @@ class Content extends React.Component{
 
 	  	  		</div>
 
-	  	  		<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" style={{marginBottom:'2rem'}}>
+	  	  		<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 img_div" >
 
 	  	  			<div class="row">
 
@@ -82,9 +86,9 @@ class Content extends React.Component{
 
 	  	  			<div class="row">
 
-	  	  				<h4 style={{marginBottom:'0.02rem', fontSize:'2em'}}><b>Diacon'17</b></h4>
+	  	  				<h4 class="hfour_channel"><b>Diacon'17</b></h4>
 
-	  	  				<h4 style={{marginTop:'0.04rem', fontSize:'2em'}}><small>23.4K Subscribers</small></h4>
+	  	  				<h4 class="hfour_channel"><small>23.4K Subscribers</small></h4>
 
 	  	  			</div>
 
@@ -94,9 +98,9 @@ class Content extends React.Component{
 
 					  		  	<a href="#">
 					  		  	
-						  		  	<div style={{textAlign:'center', backgroundColor:'#fb583e', border:'2px solid',borderColor:'#fb583e', paddingLeft:'0rem', paddingRight:'0rem', paddingTop:'0rem', paddingBottom:'0rem', borderRadius:0, width:'100%', height:'50%', fontSize:'2rem'}}>
+						  		  	<div class="div_subscribe">
 							  		  	
-						  		  		<span class="glyphicon glyphicon-usd" style={{top:'0.14rem',color:'white', fontSize:'100%'}}>
+						  		  		<span class="glyphicon glyphicon-usd icon_subscribe">
 
 						  		  		 Subscribe
 						  		  		
@@ -109,7 +113,7 @@ class Content extends React.Component{
 
 	  	  				</div>
 
-	  	  				<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4" style={{paddingTop:'0.4rem', paddingLeft:0, textAlign:'left'}}>
+	  	  				<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4 div_tooltip">
 	  	  				
 	  	  					<span class="tooltiptext">Rs. 1000</span>
 
