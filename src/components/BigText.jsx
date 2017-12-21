@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+require('./testing.css')
 
 class BigText extends React.Component{
 

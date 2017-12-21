@@ -17,9 +17,9 @@ class FeaturedContributorsSubpart extends React.Component{
 
 				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
 
-					<h5 style={{marginBottom:'0.03rem',fontSize:'2em'}}>Dr. Mahadev Singh</h5>
+					<h5 style={{marginBottom:'0.03rem',fontSize:'2vmax'}}>Dr. Mahadev Singh</h5>
 
-					<h4 style={{marginTop:'0.03rem', fontSize:'2em'}}><small>Designation</small></h4>
+					<h4 style={{marginTop:'0.03rem', fontSize:'2vmax'}}><small>Designation</small></h4>
 
 				</div>
 

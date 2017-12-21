@@ -14,7 +14,7 @@ class RecommendedChannels extends React.Component{
 
 	  		  	<div class="row" style={{marginLeft:'1rem', marginTop:'1rem'}}>
 
-		  			<h3>Recommended Channels</h3>
+		  			<h3 style={{fontSize:'2vmax'}}>Recommended Channels</h3>
 
 		  		</div>
 

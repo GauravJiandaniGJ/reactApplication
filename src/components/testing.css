@@ -1,8 +1,56 @@
-.card 
-{ 
-	font-family: 'Helvetica'; 
+
+@media screen (min-width: 768px) {
+	body 
+	{
+
+		font-size: 4vmax;
+
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+	body 
+	{
+
+		font-size: 1vmax;
+
+	}
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+	body 
+	{
+
+		font-size: 1vmax;
+
+	}
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+	body 
+	{
+
+		font-size: 1vmax;
+
+	}
+}
+
+.glyphicon.glyphicon-one-fine-dot:before {
+    content: "\25cf";
+    font-size: 1.5em;
 }
 
 /*******************
 		CSS For button
 *********************/
+
+a:hover {
+
+	text-decoration: none;
+
+}
+
+.test:hover{
+	text-decoration: none;
+}

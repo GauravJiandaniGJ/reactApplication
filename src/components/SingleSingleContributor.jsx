@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+require('./testing.css')
 class SingleSingleContributor extends React.Component{
 
 	render(){
@@ -13,17 +13,13 @@ class SingleSingleContributor extends React.Component{
 
 					<a href="#">
 
-						<div style={{marginRight:'1rem'}}>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style={{backgroundColor: '#e2e4e6', color:'black', position:'relative', borderRadius:'20%', textAlign:'left', paddingLeft:0}}>
 
-							<img src="../../mahadev_contributor.jpg" class="img-circle" style={{position:'absolute', height:'100%'}}/>
-
+							<img src="../../mahadev_contributor.jpg" class="img-circle" style={{height:'100%'}}/>
+							
+							<span style={{textOverflow:'ellipsis',color:'black', textAlign:'center', width:'100%', position:'fixed', left:0, paddingTop:'0.5rem', paddingLeft:'4.6rem', fontSize:'1.3em', position:'absolute'}}>&nbsp;Dr. Vishwa Shahnta</span>
+							
 						</div>
-						  		  	
-			  		  	<div style={{border:'1px solid white', backgroundColor:'#e2e4e6', color:'black', borderRadius:20, paddingLeft:'0rem', paddingRight:'0rem', paddingTop:'0.4rem', paddingBottom:'0.4rem', width:'100%', height:'50%', fontSize:'1.7rem'}}>
-				  		  	
-			  		  		<span style={{fontSize:'1em', paddingLeft:'2rem', marginLeft:'3.5rem', color:'black', textAlign:'center'}}>&nbsp;Dr. Vishwa Shahnta</span>
-			  		  	
-			  		  	</div>
   				
   			  		</a>
 

@@ -15,9 +15,9 @@ class CommentSection extends React.Component{
 
 				<AddComment />
 
-				<div class="row" style={{textAlign:'center', marginTop:'1rem', marginBottom:'1rem', fontSize:'2em'}}>
+				<div class="row" style={{textAlign:'center', marginTop:'1rem', marginBottom:'1rem'}}>
 
-	  	  			<h4>View all 234 comments</h4>
+	  	  			<h4 style={{fontSize:'2em'}}>View all 234 comments</h4>
 
 	  	  		</div>
 

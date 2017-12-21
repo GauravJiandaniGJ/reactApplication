@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+require('./testing.css')
 class RelatedVideoSubpart extends React.Component{
 	
 	render(){
@@ -11,7 +11,7 @@ class RelatedVideoSubpart extends React.Component{
 
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style={{paddingLeft:0}}>
 
-					<div class= "glyphicon glyphicon-play-circle" style={{position:'absolute', display:'block', top:'36%', left:'20%', marginTop:'auto', marginBottom:'auto', textAlign:'center', color:'white', fontSize:'3rem',width: '50%',height:'50%'}}>
+					<div class= "glyphicon glyphicon-play-circle" style={{position:'absolute', display:'block', top:'36%', left:'20%', marginTop:'auto', marginBottom:'auto', textAlign:'center', color:'white', fontSize:'2em',width: '50%',height:'50%'}}>
 
 					</div>
 
@@ -27,23 +27,23 @@ class RelatedVideoSubpart extends React.Component{
 
 					</div>
 
-					<div class="row">
+					<div class="row" style={{}}>
 
-						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style={{paddingLeft:'0.12rem',paddingRight:'0.8rem', paddingTop:'0.3rem', marginRight: '1rem'}}>
+						<div class="col-xs-1 col-sm-1 col-md-2 col-lg-2" style={{paddingLeft:'0.12rem',paddingRight:'0.8rem', paddingTop:'0.3rem'}}>
 
-							<img src="../../thumbnail.jpg" class="img-circle" />
+							<img src="../../thumbnail.jpg" class="img-circle" style={{width:'100%'}}/>
 
 						</div>
 
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style={{paddingLeft:'0rem',paddingRight:0}}>
 
-							<h3 style={{marginTop:'-2px', fontSize:'2em'}}><small>Channel Name</small></h3>
+							<h3 style={{marginTop:'-2px', fontSize:'2.2em'}}><small>Channel Name</small></h3>
 
 						</div>
 
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style={{paddingLeft:'0rem',paddingRight:0}}>
 
-							<h3 style={{marginTop:'-2px', fontSize:'2em'}}>
+							<h3 style={{marginTop:'-2px', fontSize:'2.2em'}}>
 
 								<small>91.2K
 

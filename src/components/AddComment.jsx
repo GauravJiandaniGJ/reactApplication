@@ -23,7 +23,7 @@ class AddComment extends React.Component{
 					  		  	
 			  		  	<div style={{textAlign:'left', backgroundColor:'#c3c1c1', paddingLeft:'0rem', paddingRight:'0rem', paddingTop:'0.4rem', paddingBottom:'0.4rem', borderRadius:2, width:'100%', height:'50%'}}>
 				  		  	
-			  		  		<h4 style={{marginTop:'0.2rem', marginBottom:'0.2rem', paddingLeft:'0.8rem'}}><small>Add Your Comment..</small></h4>
+			  		  		<h4 style={{marginTop:'0.2rem', marginBottom:'0.2rem', paddingLeft:'0.8rem', fontSize:'1.8em'}}><small>Add Your Comment..</small></h4>
 			  		  	
 			  		  	</div>
 				  			

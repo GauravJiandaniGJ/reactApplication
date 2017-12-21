@@ -21,21 +21,25 @@ class RecommendedChannelsSubPart extends React.Component{
 
   	  				<div class="row">
 
-  	  					<h4 style={{marginBottom:0}}>Diacon'17
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
 
-  		  					<small>
+    	  					<h4 style={{marginBottom:0, fontSize:'2em'}}>Diacon'17
 
-  		  						&nbsp;&nbsp;32 votes
+    	  					</h4>
 
-  		  					</small>
-  	  					
-  	  					</h4>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+
+                  <h4 style={{ fontSize:'2em'}}><small>32 votes</small></h4>
+
+                </div>
 
   	  				</div>
 
   	  				<div class="row">
 
-  	  					<h4 style={{marginTop:0}}>
+  	  					<h4 style={{marginTop:0, fontSize:'2em'}}>
 
   	  						<small>
 

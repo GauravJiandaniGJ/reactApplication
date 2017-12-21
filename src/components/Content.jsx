@@ -4,6 +4,7 @@ import SingleSingleContributor from './SingleSingleContributor.jsx';
 import BigText from './BigText.jsx';
 
 require('./Content.css');
+require('./testing.css');
 
 class Content extends React.Component{
 
@@ -15,13 +16,13 @@ class Content extends React.Component{
 
 	  	  		<div class="row" style={{textAlign:'center', marginLeft:'2rem', marginRight:'2rem', marginTop:'1rem'}}>
 
-	  	  			<h1 style={{fontSize:'3rem', marginLeft:'7rem', marginRight:'7rem', marginTop:'2rem', marginBottom:'2rem'}}>Like this Video? Get Access to all the content of this Channel!</h1>
+	  	  			<h1 style={{fontSize:'3vmax', marginLeft:'7rem', marginRight:'7rem', marginTop:'2rem', marginBottom:'2rem'}}>Like this Video? Get Access to all the content of this Channel!</h1>
 
 	  	  		</div>
 
 	  	  		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-7" style={{}}>
 
-	  	  			<div class="row" style={{textAlign:'left', marginLeft:'4rem', fontSize:'2em'}}>
+	  	  			<div class="row" style={{textAlign:'left', marginLeft:'4rem', fontSize:'2vmax'}}>
 
 	  	  				<h3><b>What's included?</b></h3>
 
@@ -31,11 +32,11 @@ class Content extends React.Component{
 
 	  	  				<ul>
 
-	  	  					<li style={{marginBottom:'0.5rem', fontSize:'1.5em'}}>17 lectures in 4 categories</li>
+	  	  					<li style={{marginBottom:'0.5rem', fontSize:'2vmax'}}>17 lectures in 4 categories</li>
 
-	  	  					<li style={{marginBottom:'0.5rem', fontSize:'1.5em'}}>Lectures from renowned doctors from India</li>
+	  	  					<li style={{marginBottom:'0.5rem', fontSize:'2vmax'}}>Lectures from renowned doctors from India</li>
 	  	  					
-	  	  					<li style={{marginBottom:'0.5rem', fontSize:'1.5em'}}><BigText content_data="Life Time access to new Content" /></li>
+	  	  					<li style={{marginBottom:'0.5rem', fontSize:'2vmax'}}><BigText content_data="Life Time access to new Content" /></li>
 
 	  	  				</ul>
 
@@ -81,9 +82,9 @@ class Content extends React.Component{
 
 	  	  			<div class="row">
 
-	  	  				<h4 style={{marginBottom:'0.02rem', fontSize:'190%'}}><b>Diacon'17</b></h4>
+	  	  				<h4 style={{marginBottom:'0.02rem', fontSize:'2em'}}><b>Diacon'17</b></h4>
 
-	  	  				<h4 style={{marginTop:'0.04rem'}}><small>23.4K Subscribers</small></h4>
+	  	  				<h4 style={{marginTop:'0.04rem', fontSize:'2em'}}><small>23.4K Subscribers</small></h4>
 
 	  	  			</div>
 
@@ -93,7 +94,7 @@ class Content extends React.Component{
 
 					  		  	<a href="#">
 					  		  	
-						  		  	<div style={{textAlign:'center', backgroundColor:'#fb583e', border:'2px solid',borderColor:'#fb583e', paddingLeft:'0.4rem', paddingRight:'0.4rem', paddingTop:'0.4rem', paddingBottom:'0.4rem', borderRadius:0, width:'100%', height:'50%', fontSize:'2rem'}}>
+						  		  	<div style={{textAlign:'center', backgroundColor:'#fb583e', border:'2px solid',borderColor:'#fb583e', paddingLeft:'0rem', paddingRight:'0rem', paddingTop:'0rem', paddingBottom:'0rem', borderRadius:0, width:'100%', height:'50%', fontSize:'2rem'}}>
 							  		  	
 						  		  		<span class="glyphicon glyphicon-usd" style={{top:'0.14rem',color:'white', fontSize:'100%'}}>
 
@@ -108,7 +109,7 @@ class Content extends React.Component{
 
 	  	  				</div>
 
-	  	  				<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4" style={{paddingTop:'0.4rem', textAlign:'left'}}>
+	  	  				<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4" style={{paddingTop:'0.4rem', paddingLeft:0, textAlign:'left'}}>
 	  	  				
 	  	  					<span class="tooltiptext">Rs. 1000</span>
 

@@ -11,6 +11,7 @@ import ShareButton from './ShareButton.jsx'
 import CommentSection from './CommentSection.jsx'
 import RecommendedChannels from './RecommendedChannels.jsx'
 import BigText from './BigText.jsx'
+require('./testing.css')
 // import { Player, BigPlayButton } from 'video-react';
 
 class ReactBootstrapStyle extends React.Component {
@@ -61,7 +62,7 @@ class ReactBootstrapStyle extends React.Component {
 
 				  	<div class="row" style={{textAlign:'center'}}>
 
-					  	<div class= "glyphicon glyphicon-play-circle" style={{position:'absolute', display:'block', marginRight:'auto', top:'13%', left:'25%', marginLeft:'auto', textAlign:'center', color:'white', fontSize:'10rem',width: '50%',height:'50%'}}>
+					  	<div class= "glyphicon glyphicon-play-circle" style={{position:'absolute', display:'block', marginRight:'auto', top:'10%', left:'25%', marginLeft:'auto', textAlign:'center', color:'white', fontSize:'10rem',width: '50%',height:'50%'}}>
 
 					  	</div>
 
@@ -73,7 +74,7 @@ class ReactBootstrapStyle extends React.Component {
 
 			  		  	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style={{marginLeft:'3rem'}}>
 			  		  		
-			  		  		<h3><b>Channel Name With all information lorem ipsum and word  &nbsp;</b>
+			  		  		<h3 style={{fontSize:'2vmax'}}><b>Channel Name With all information lorem ipsum and word  &nbsp;</b>
 
 			  		  			<span class="glyphicon glyphicon-lock" aria-hidden="true">
 			  		  			
@@ -93,7 +94,7 @@ class ReactBootstrapStyle extends React.Component {
 
 			  	  	<div class="row">
 
-			  	  		<h4 style={{marginTop:0, marginLeft:'4.9rem'}}>
+			  	  		<h4 style={{marginTop:0, marginLeft:'4.9rem', fontSize:'2em'}}>
 
 			  	  			<small>
 
@@ -101,14 +102,14 @@ class ReactBootstrapStyle extends React.Component {
 
 				  	  				23.4K Views &nbsp; &nbsp; 
 
-				  	  				<span class="glyphicon glyphicon-record" aria-hidden="true" style={{fontSize:'1rem', top:-1}}>
+				  	  				<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" >
 				  	  				
 				  	  				</span>
 
 				  	  				&nbsp; &nbsp; 23.4K Likes &nbsp; &nbsp; 
 
-				  	  				<span class="glyphicon glyphicon-record" aria-hidden="true" style={{fontSize:'1rem', top:-1}}>
-				  	  				
+				  	  				<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" >
+				  	  								  	  				
 				  	  				</span>
 
 				  	  				&nbsp; &nbsp; 23 Shares &nbsp; &nbsp; 
@@ -138,7 +139,7 @@ class ReactBootstrapStyle extends React.Component {
 
 			  	  	</div>
 
-			  	  	<div class="row" style={{textAlign:'center', border:'1px solid black',  rginLeft:'3rem', marginRight:'3rem', marginTop:'2rem'}}>
+			  	  	<div class="row" style={{textAlign:'center', border:'1px solid black',  marginLeft:'3rem', marginRight:'3rem', marginTop:'2rem'}}>
 
 			  	  		<Content />
 

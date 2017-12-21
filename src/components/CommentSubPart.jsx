@@ -21,7 +21,7 @@ class CommentSubPart extends React.Component{
 				  	
 				  	<div class="row">
 
-				  		<h4 style={{marginTop:0, marginLeft:'1.4rem', fontSize:'2em', marginBottom:'0.4rem'}}>
+				  		<h4 style={{marginTop:0, marginLeft:'1.4rem', fontSize:'2vmax', marginBottom:'0.4rem'}}>
 
 				  		<b>Dr. Govind Verma</b>
 
@@ -33,7 +33,7 @@ class CommentSubPart extends React.Component{
 
 				  	<div class="row">
 
-				  		<h4 style={{marginTop:0,  marginLeft:'1.4rem', paddingRight:'5rem', fontSize:'2em'}}>
+				  		<h4 style={{marginTop:0,  marginLeft:'1.4rem', paddingRight:'5rem', fontSize:'2vmax'}}>
 
 				  			<small>
 
@@ -48,15 +48,16 @@ class CommentSubPart extends React.Component{
 
 				  	<div class="row" style={{marginBottom:'1.6rem'}}>
 
-				  		<h5 style={{marginTop:0,  marginLeft:'1.4rem', fontSize:'2em'}}>
+				  		<h5 style={{marginTop:0,  marginLeft:'1.4rem', fontSize:'2vmax'}}>
 
 				  			<small>
 
 				  				Dec 23, 2017 &nbsp;&nbsp;
 
-				  				<span class="glyphicon glyphicon-record" aria-hidden="true" style={{fontSize:'1em', top:1}}>
-	  								  	  				
-	  	  						</span>
+				  				<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" >
+				  								  	  				
+			  	  				</span>
+
 
 				  				&nbsp;&nbsp;Like 
 
