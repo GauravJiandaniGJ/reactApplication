@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import RecommendedChannelsSubPart from '../RecommendedChannelsSubPart/RecommendedChannelsSubPart.jsx';
 
 require('../testing.css')
+require('./RecommendedChannels.css')
 
 class RecommendedChannels extends React.Component{
 
@@ -12,9 +13,9 @@ class RecommendedChannels extends React.Component{
 
 			<div className="">
 
-	  		  	<div class="row" style={{marginLeft:'1rem', marginTop:'1rem'}}>
+	  		  	<div class="row div_row_recom_channels" >
 
-		  			<h3 style={{fontSize:'2vmax'}}>Recommended Channels</h3>
+		  			<h3 >Recommended Channels</h3>
 
 		  		</div>
 

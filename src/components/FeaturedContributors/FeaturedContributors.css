@@ -1,0 +1,39 @@
+/********************
+h4 - featured contributor
+********************/
+.hfour_contributor{
+	margin-left: 6rem;
+	font-size: 2em;
+}
+
+/*********************
+div - row - caraousel slide 
+********************/
+.div_row_caraousel{
+	margin-left: 3.1rem;
+	background-color: white;
+}
+
+
+/*********************
+div - row - caraousel slide 
+********************/
+.div_row_caraousel{
+	margin-left: 3.1rem;
+	background-color: white;
+}
+
+/***********************
+<a> - previous
+***********************/
+.a_prev{
+	opacity: 0.2;
+	width: 10px;
+}
+
+/******************
+icon a tag previous
+******************/
+.icon{
+	color: black;
+}
