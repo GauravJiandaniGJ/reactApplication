@@ -34,7 +34,7 @@ class RelatedVideo extends React.Component{
 
 						<div class="row">
 
-							<h4 style={{marginTop:'0.2rem', fontSize:'2em', overflowX:'auto'}}>Lorem Ipsum dolor sit amet consecteur</h4>
+							<h4 style={{marginTop:0, marginBottom:0, fontSize:'2em', overflowX:'auto'}}>Lorem Ipsum dolor sit amet consecteur</h4>
 
 						</div>
 

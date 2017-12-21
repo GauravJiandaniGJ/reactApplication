@@ -30,3 +30,18 @@ Bookmark Text
 	color:#fb583e;
 	font-size: 100%;
 }
+
+.div_tag:hover .icon{
+	color:white;
+	background-color: #fb583e
+}
+
+.div_tag:hover .text{
+	color:white;
+	background-color: #fb583e
+}
+
+.div_tag:hover{
+	color:white;
+	background-color: #fb583e
+}

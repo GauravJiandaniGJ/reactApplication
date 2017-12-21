@@ -59,7 +59,13 @@ class CommentSubPart extends React.Component{
 				  								  	  				
 			  	  				</span>
 
-				  				<span class="like_btn">&nbsp;&nbsp;Like</span> 
+				  				<span class="like_btn">&nbsp;&nbsp;Like &nbsp;&nbsp;</span> 
+
+				  				<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" >
+				  								  	  				
+			  	  				</span>
+				  				
+				  				<span class="like_btn">&nbsp;&nbsp;Reply</span> 
 
 				  			</small>
 
