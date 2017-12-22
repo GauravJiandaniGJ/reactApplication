@@ -13,25 +13,15 @@ class CommentSection extends React.Component{
 		return(
 
 			<div className="">
-
 				<AddComment />
-
 				<div class="row hfour_row" >
-
-	  	  			<h4 class="hfour">View all 234 comments</h4>
-
-	  	  		</div>
-
-	  	  		<div class="row">
-
-	  		  	  		<CommentSubPart />
-	  		  	  		
-	  		  	  		<CommentSubPart />
-
-	  	  		</div>
-
-
-  			</div>
+					<h4 class="hfour">View all 234 comments</h4>
+				</div>
+				<div class="row">
+					<CommentSubPart />
+					<CommentSubPart />
+				</div>
+			</div>
 
 		)
 

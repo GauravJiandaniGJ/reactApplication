@@ -27,20 +27,14 @@ class BookmarkButton extends React.Component{
 	render(){
 
 		var bookmark =   	<div class="div_tag" onClick={this.changeBookmark.bind(this)}>
-					  		  	
 				  		  		<span class="glyphicon glyphicon-star-empty iconn"></span>
-
-				  		  		<span class="text">&nbsp;Bookmark</span>
-				  		  	
+				  		  		<span class="text">&nbsp;Bookmark</span>				  		  	
 				  		  	</div>
 		  			
 
-		var bookmarked = 	<div class="div_tag_bookmarked" onClick={this.changeBookmark.bind(this)}>
-					  		  	
+		var bookmarked = 	<div class="div_tag_bookmarked" onClick={this.changeBookmark.bind(this)}>					  		  	
 				  		  		<span class="glyphicon glyphicon-star-empty iconn_bookmarked"></span>
-
-				  		  		<span class="text_bookmarked">&nbsp;Bookmarked</span>
-				  		  	
+				  		  		<span class="text_bookmarked">&nbsp;Bookmarked</span>				  		  	
 				  		  	</div>
 		  			
 

@@ -10,20 +10,13 @@ class ShareButton extends React.Component{
 		return(
 
 			<div className="">
-
-	  		  	<a href="#">
-	  		  	
-		  		  	<div class="div_share">
-			  		  	
-		  		  		<span class="glyphicon glyphicon-share-alt icon_share" ></span>
-
-		  		  		<span class="text_share">&nbsp;Share</span>
-		  		  	
-		  		  	</div>
-  			
-  			  	</a>
-
-  			</div>
+				<a href="#">
+					<div class="div_share">
+						<span class="glyphicon glyphicon-share-alt icon_share" ></span>
+						<span class="text_share">&nbsp;Share</span>
+					</div>
+				</a>
+			</div>
 
 		)
 

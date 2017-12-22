@@ -10,19 +10,12 @@ class LikeButton extends React.Component{
 		return(
 
 	  			<div class="">
-
-		  		  	<a href="#">
-		  		  	
-			  		  	<div class="div_like">
-				  		  	
-			  		  		<span class="glyphicon glyphicon-thumbs-up icon_like"></span>
-
-			  		  		<span class="test text_like">&nbsp;Like</span>
-			  		  	
-			  		  	</div>
-	  			
-	  			  	</a>
-
+	  				<a href="#">
+	  					<div class="div_like">
+	  						<span class="glyphicon glyphicon-thumbs-up icon_like"></span>
+	  						<span class="test text_like">&nbsp;Like</span>
+	  					</div>
+	  				</a>
 	  			</div>
 
 			)

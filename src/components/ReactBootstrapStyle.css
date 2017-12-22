@@ -89,3 +89,21 @@ h4 - that contains bigtext
 	margin-right: 4rem;
 	font-size: 100%;
 }
+
+/*****************************
+div - row - that contains content
+*****************************/
+.div_row_content{
+	text-align: center;
+	border:1px solid black;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top: 2rem;
+}
+
+/*****************************
+div - row - to have horizontal line <hr>
+*****************************/
+.div_row_line{
+	margin-top: -1rem;
+}

@@ -146,153 +146,91 @@ class ReactBootstrapStyle extends React.Component {
 		return(
 
 			<div className="container-fluid">
-
 				<div className="row div_nav">
-
-					<CustomNavBar />					
-
+					<CustomNavBar />
 				</div>
-
 				<div class="row row_cont_video">
-				
-				  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+						<div class="row div_video_icon">
+							<div class= "glyphicon glyphicon-play-circle play_btn" ></div>
+							<img src={this.state.videoObj.thumbnail} class="img_video"/>
+						</div>
+						<div class="row">
+							<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 div_name_lock">
+								<h3 class="hthree_name">
+									<b>{this.state.videoObj.title}  &nbsp;</b>
 
-				  	<div class="row div_video_icon">
+						  		  			{
+						  		  				this.state.videoObj.ispaid == 1 ? 
+									<span class="glyphicon glyphicon-lock" aria-hidden="true"></span> : ''
+						  		  			
+						  		  			}
 
-					  	<div class= "glyphicon glyphicon-play-circle play_btn" >
+						  		  		
+								</h3>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 div_bookmark">
+								<BookmarkButton isActive={this.state.videoObj.isactive}/>
+							</div>
+						</div>
+						<div class="row">
+							<h4 class="hfour_vls">
+								<small>
+									<b>
 
-					  	</div>
+							  	  				23.4K Views &nbsp; &nbsp; 
 
-					  	<img src={this.state.videoObj.thumbnail} class="img_video"/>
+							  	  				
+										<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" ></span>
 
-				  	</div>
+							  	  				&nbsp; &nbsp; 23.4K Likes &nbsp; &nbsp; 
 
-			  	  	<div class="row">
+							  	  				
+										<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" ></span>
 
-			  		  	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 div_name_lock">
-			  		  		
-			  		  		<h3 class="hthree_name"><b>{this.state.videoObj.title}  &nbsp;</b>
-
-			  		  			{
-			  		  				this.state.videoObj.ispaid == 1 ? <span class="glyphicon glyphicon-lock" aria-hidden="true">
-			  		  			
-			  		  			</span> : ''
-			  		  			
-			  		  			}
-
-			  		  		</h3>
-
-			  		  	</div>
-			  		  	
-			  		  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 div_bookmark">
-							
-							<BookmarkButton isActive={this.state.videoObj.isactive}/>
-				  		  	
-			  		  	</div>
-
-			  	  	</div>
-
-			  	  	<div class="row">
-
-			  	  		<h4 class="hfour_vls">
-
-			  	  			<small>
-
-				  	  			<b>
-
-				  	  				23.4K Views &nbsp; &nbsp; 
-
-				  	  				<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" >
-				  	  				
-				  	  				</span>
-
-				  	  				&nbsp; &nbsp; 23.4K Likes &nbsp; &nbsp; 
-
-				  	  				<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" >
-				  	  								  	  				
-				  	  				</span>
-
-				  	  				&nbsp; &nbsp; 23 Shares &nbsp; &nbsp; 
+							  	  				&nbsp; &nbsp; 23 Shares &nbsp; &nbsp; 
 
 
-				  	  			</b>
-
-			  	  			</small>
-
-			  	  		</h4>
-
-			  	  	</div>
-
-			  	  	<div class="row">
-
-			  	  		<h4 class="hfour_bigtext">
-
-			  	  			<BigText content_data={text}/>
-
-			  	  		</h4>
-
-			  	  	</div>
-
-			  	  	<div class="row">
-
-			  	  		<FeaturedContributors />
-
-			  	  	</div>
-
-			  	  	<div class="row div_row_content" >
-
-			  	  		<Content />
-
-			  	  	</div>
-
-			  	  	<div class="row">
-
-			  	  		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-
-			  	  			<LikeButton />
-
-			  	  		</div>
-
-			  	  		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-			  	  		
-			  	  			<ShareButton />
-
-			  	  		</div>
-
-			  	  	</div>
-
-			  	  	<div class="row div_row_line">
-
-			  	  		<hr />
-
-			  	  	</div>
-
-			  	  	<div class="row">
-
-			  	  		<CommentSection />
-			  	  		
-			  	  	</div>
-
-				  </div>
-				
-				  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				  	
-				  	<RelatedVideo />
-
-				  	<div class="row">
-
-				  		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-				  			<RecommendedChannels />
-					  		
-				  		</div>
-
-				  	</div>
-
-				  </div>
-				
+							  	  			
+									</b>
+								</small>
+							</h4>
+						</div>
+						<div class="row">
+							<h4 class="hfour_bigtext">
+								<BigText content_data={text}/>
+							</h4>
+						</div>
+						<div class="row">
+							<FeaturedContributors />
+						</div>
+						<div class="row div_row_content" >
+							<Content />
+						</div>
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<LikeButton />
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<ShareButton />
+							</div>
+						</div>
+						<div class="row div_row_line">
+							<hr />
+						</div>
+						<div class="row">
+							<CommentSection />
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<RelatedVideo />
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<RecommendedChannels />
+							</div>
+						</div>
+					</div>
 				</div>
-
 			</div>
 
 		);

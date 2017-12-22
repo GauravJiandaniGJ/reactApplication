@@ -12,24 +12,15 @@ class RecommendedChannels extends React.Component{
 		return(
 
 			<div className="">
-
-	  		  	<div class="row div_row_recom_channels" >
-
-		  			<h3 >Recommended Channels</h3>
-
-		  		</div>
-
-		  		<div>
-
-		  			<RecommendedChannelsSubPart />
-
-		  			<RecommendedChannelsSubPart />
-		  			
-		  			<RecommendedChannelsSubPart />
-		  			
-		  		</div>
-
-  			</div>
+				<div class="row div_row_recom_channels" >
+					<h3 >Recommended Channels</h3>
+				</div>
+				<div>
+					<RecommendedChannelsSubPart />
+					<RecommendedChannelsSubPart />
+					<RecommendedChannelsSubPart />
+				</div>
+			</div>
 
 		)
 

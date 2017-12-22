@@ -19,23 +19,12 @@ class BigText extends React.Component{
 
 	showMoreText(){
 
-		
-
 		this.setState({showLessTextHtml: !this.state.showLessTextHtml, firsttime: true});
 
 	}
 
-	componentDidMount() {
-	      console.log('Component DID MOUNT!')
-	}
-
-	componentWillReceiveProps(newProps) {    
-	      console.log('Component WILL RECIEVE PROPS!')
-	   }
-
 	render(){
-
-		
+	
 		var content = this.props.content_data;
 
 		console.log('inside renderstage')
