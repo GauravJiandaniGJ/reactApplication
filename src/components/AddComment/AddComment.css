@@ -72,6 +72,7 @@ to have hovering effect
 .div_comment:hover{
 	color: white;
 	background-color: #fb583e;
+	cursor: pointer;
 }
 
 /****************************

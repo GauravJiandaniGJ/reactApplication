@@ -1,3 +1,11 @@
 .text_size{
-	font-size: 2em;
+	font-size: 1.7em;
+}
+
+.text_btn{
+	font-size: 1em;
+}
+
+.text_btn:hover{
+	cursor: pointer;
 }

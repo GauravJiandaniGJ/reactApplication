@@ -18,6 +18,17 @@ class BookmarkButton extends React.Component{
 		this.setState({isBookmarked: !this.state.isBookmarked});
 	}
 
+	componentWillMount(){
+		var temp = this.props.isBookmarkDone;
+
+		if(temp == 0)
+		{
+			this.setState({isBookmarked: false})
+		}else{
+			this.setState({isBookmarked: true})
+		}
+	}
+
 	getInitialState(){
 		return{
 			isBookmarked: false
@@ -43,7 +54,6 @@ class BookmarkButton extends React.Component{
 			<div>
 	  		  	
 	  		  	{this.state.isBookmarked ? bookmarked : bookmark}
-  		  	
 
 			</div>
 

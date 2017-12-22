@@ -24,8 +24,12 @@ class Content extends React.Component{
 					</div>
 					<div class="row row_list">
 						<ul>
-							<li class="row_items">17 lectures in 4 categories</li>
-							<li class="row_items">Lectures from renowned doctors from India</li>
+							<li class="row_items">
+								<BigText content_data="17 lectures in 4 categories" />
+							</li>
+							<li class="row_items">
+								<BigText content_data="Lectures from renowned doctors from India" />
+							</li>
 							<li class="row_items">
 								<BigText content_data="Life Time access to new Content" />
 							</li>
@@ -51,12 +55,12 @@ class Content extends React.Component{
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 image_div" >
-					<div class="row">
-						<img src="../../mahadev_contributor.jpg" class="img-circle"/>
+					<div class="row img_row">
+						<img src={this.props.content_details.logo} class="img-circle image"/>
 					</div>
-					<div class="row">
+					<div class="row channel_row">
 						<h4 class="hfour_channel">
-							<b>Diacon'17</b>
+							<b>{this.props.content_details.title}</b>
 						</h4>
 						<h4 class="hfour_channel">
 							<small>23.4K Subscribers</small>

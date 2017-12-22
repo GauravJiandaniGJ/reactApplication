@@ -93,7 +93,6 @@ row containing items
 ********************/
 .row_items{
     margin-bottom: 0.5rem;
-    font-size: 1.5vmax;
 }
 
 /********************
@@ -201,4 +200,26 @@ div - of tooltip
     padding-top: 0.4rem;
     padding-left: 0;
     text-align: left;
+}
+
+/*****************
+img - of logo of channel
+*****************/
+.image{
+    max-width: 40%;
+}
+
+
+/*****************
+img - row - of logo of channel
+*****************/
+.img_row{
+    padding-left: 2rem;
+}
+
+/*****************
+div - row - of title and subscriber of channel
+*****************/
+.channel_row{
+    padding-left: 2rem;
 }

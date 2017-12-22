@@ -36,7 +36,7 @@ class BigText extends React.Component{
 
 			console.log('inside first if')
 
-			text = <small class="text_size"> {content.substring(0,120)} <button onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>more</button> </small>;
+			text = <small class="text_size"> {content.substring(0,120)} <span class="text_btn" onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>&nbsp;more..</span> </small>;
 
 			this.state.showLessTextHtml = true
 
@@ -44,7 +44,7 @@ class BigText extends React.Component{
 
 			console.log('content is less than 120')
 
-			content = content + '.'
+			content = <small class="text_size"> { content } </small>
 
 		}else if(content.length > 120 && this.state.showLessTextHtml){
 
@@ -52,13 +52,13 @@ class BigText extends React.Component{
 
 			var t = content
 			
-			text = <small class="text_size"> {t.substring(0,120)} <button onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>more</button> </small>;
+			text = <small class="text_size"> {t.substring(0,120)} <span class="text_btn" onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>&nbsp;more..</span> </small>;
 
 		}else{
 
 			console.log('last else')
 
-			content = <small class="text_size"> {content} <button onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>less</button></small>
+			content = <small class="text_size"> {content} <span class="text_btn" onClick={this.showMoreText.bind(this)} style={{color:'#fb583e', backgroundColor:'white', border:0}}>&nbsp;..less</span></small>
 
 		}
 

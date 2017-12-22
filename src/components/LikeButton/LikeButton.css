@@ -42,3 +42,7 @@ span - text tag
 	color:white;
 	background-color: #fb583e;
 }
+
+.div_like:hover{
+	cursor: pointer;
+}
