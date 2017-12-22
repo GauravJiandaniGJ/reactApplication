@@ -1,21 +1,20 @@
 /*************
 image div tag
 ************/
-.img_div{
+.img_div_comment{
 	text-align: left;
 	margin-right: 1rem;
 	margin-left: 1.3rem;
+
 }
 
 
 /*************
 image tag
 ************/
-.img_tag{
+.img_tag_comment{
 	padding-left: 4rem;
 }
-style={{paddingLeft:'4rem'}}
-
 
 /*************
 details of comment

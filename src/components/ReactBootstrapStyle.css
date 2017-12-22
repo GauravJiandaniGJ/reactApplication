@@ -3,3 +3,89 @@
 	color:red;
 	background-color: red;
 }
+
+/**********************************
+div - Navigation bar
+**********************************/
+.div_nav{
+	box-shadow: 10px 10px 8px #888888;
+}
+
+/*********************************
+row containing columns that has video side
+*********************************/
+.row_cont_video{
+	padding-top: 1rem;
+}
+
+/*******************************
+div containing row that has video and play icon
+*******************************/
+.div_video_icon{
+	text-align: center;
+}
+
+/*******************************
+div containing play button
+*******************************/
+.play_btn{
+	position: absolute;
+	display: block;
+	left: 25%;
+	margin-right: auto;
+	top: 8%;
+	margin-bottom: auto;
+	text-align: center;
+	color: white;
+	font-size: 10rem;
+	width: 50%;
+	height: 50%;
+}
+
+/*****************************
+img - that has video image
+*****************************/
+.img_video{
+	width: 100%;
+}
+
+
+/*****************************
+div - 8 columns that contains channel name and lock icon
+*****************************/
+.div_name_lock{
+	margin-left: 3rem;
+}
+
+/***************************
+h3 - name of channel
+***************************/
+.hthree_name{
+	font-size: 2vmax;
+}	
+
+/***************************
+div - columns of size 3 that contains bookmark button
+***************************/
+.div_bookmark{
+	margin-top: 3rem;
+	margin-left: 0.8rem;
+}
+
+/**************************
+h4 - that contains views, likes, shares
+**************************/
+.hfour_vls{
+	margin-top: 0;
+	margin-left: 4.9rem;
+	font-size: 2em;
+}
+
+/*****************************
+h4 - that contains bigtext
+*****************************/
+.hfour_bigtext{
+	margin-left: 4.9rem;
+	margin-right: 4rem;
+	font-size: 100%;
+}

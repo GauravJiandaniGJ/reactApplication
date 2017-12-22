@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 require('../testing.css')
+require('./RecommendedChannelsSubPart.css')
 
 class RecommendedChannelsSubPart extends React.Component{
 
@@ -31,7 +32,7 @@ class RecommendedChannelsSubPart extends React.Component{
 
                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 
-                  <h4 style={{ fontSize:'2em'}}><small>32 votes</small></h4>
+                  <h4 class="hfour_tag"><small>32 votes</small></h4>
 
                 </div>
 
@@ -39,7 +40,7 @@ class RecommendedChannelsSubPart extends React.Component{
 
   	  				<div class="row">
 
-  	  					<h4 class="hfour_tag">
+  	  					<h4 class="hfour_tag_subscribers">
 
   	  						<small>
 

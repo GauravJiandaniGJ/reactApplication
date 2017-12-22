@@ -18,9 +18,9 @@ first div after <a> tag
 span - icon of share
 *********************/
 .icon_share{
-	top:0.55rem;
+	top:0.6rem;
 	color: #fb583e;
-	font-size: 1.8em;
+	font-size: 1.5em;
 }
 
 /***********************
@@ -28,7 +28,7 @@ span - text of share
 ***********************/
 .text_share{
 	color:#fb583e;
-	font-size: 1.6em;
+	font-size: 1.3em;
 }
 
 .div_share:hover .icon_share{

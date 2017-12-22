@@ -14,13 +14,37 @@ div tag
 	font-size: 1.5em;
 }
 
+/*************
+div tag
+************/
+.div_tag_bookmarked{
+	text-align: center;
+	border: 2px solid #fb583e;
+	padding-left: 0;
+	padding-right:0;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	width: 80%;
+	height: 50%;
+	font-size: 1.5em;
+	color:white;
+	background-color: #fb583e;
+}
+
+.div_tag_bookmarked:hover{
+	color:#fb583e;
+	background-color: white;
+	cursor: pointer;
+}
+
 /***********
 glphicon icon
 **********/
-.icon{
+.iconn{
 	top:0.22rem;
-	color:#fb583e;
+	color: #fb583e;
 	font-size: 100%;
+	background-color: white;
 }
 
 /************
@@ -31,17 +55,18 @@ Bookmark Text
 	font-size: 100%;
 }
 
-.div_tag:hover .icon{
+.div_tag:hover .iconn{
 	color:white;
-	background-color: #fb583e
+	background-color: #fb583e;
 }
 
 .div_tag:hover .text{
 	color:white;
-	background-color: #fb583e
+	background-color: #fb583e;
 }
 
 .div_tag:hover{
 	color:white;
-	background-color: #fb583e
+	background-color: #fb583e;
+	cursor: pointer;
 }

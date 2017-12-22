@@ -60,7 +60,7 @@ first row - like this video content
 h1 tag containing text
 ********************/
 .hone_tag{
-    font-size: 3vmax;
+    font-size: 2vmax;
     margin-left: 7rem;
     margin-right: 7rem;
     margin-top: 2rem;
@@ -85,7 +85,6 @@ row cantaining list of items that are included
     text-align: left;
     margin-left: 1rem;
     width: 100%;
-    font-size: 120%;
 }
 
 
@@ -94,7 +93,7 @@ row containing items
 ********************/
 .row_items{
     margin-bottom: 0.5rem;
-    font-size: 2vmax;
+    font-size: 1.5vmax;
 }
 
 /********************

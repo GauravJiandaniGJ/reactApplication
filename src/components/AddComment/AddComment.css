@@ -73,3 +73,10 @@ to have hovering effect
 	color: white;
 	background-color: #fb583e;
 }
+
+/****************************
+image that contains image of sender
+****************************/
+.img_sender{
+	padding-left: 4rem;
+}

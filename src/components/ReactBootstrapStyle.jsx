@@ -12,6 +12,7 @@ import CommentSection from './CommentSection/CommentSection.jsx'
 import RecommendedChannels from './RecommendedChannels/RecommendedChannels.jsx'
 import BigText from './BigText/BigText.jsx'
 require('./testing.css')
+require('./ReactBootstrapStyle.css')
 // import { Player, BigPlayButton } from 'video-react';
 
 class ReactBootstrapStyle extends React.Component {
@@ -20,9 +21,105 @@ class ReactBootstrapStyle extends React.Component {
 	      super(props);
 			
 	      this.state = {
-	         showLessTextHtml: true
+	         showLessTextHtml: true,
+	         videoObj: Object
 	      }
 	 }
+
+	 componentWillMount(){
+	 	console.log('called')
+	 	this.setState({videoObj:{
+        "videoid": 5,
+        "videoaccountid": 1,
+        "title": "New Techniques in Radiology",
+        "synopsis": "This video explains new techniques in Radiology by the leading organisations of the world ",
+        "rank": 2,
+        "attachedpfpid": 6630,
+        "videourl": null,
+        "videoplatform": null,
+        "videoembedcode": null,
+        "durationinms": 100000,
+        "videoidentifier": null,
+        "thumbnail": "https://s17.postimg.org/ctvxlqfz3/radiology_1_main_graphic_720_x_324.jpg",
+        "ispaid": 1,
+        "isactive": 1,
+        "createdon": "2017-12-06T11:13:53.000Z",
+        "modifiedon": "2017-12-06T11:13:56.000Z",
+        "videoaccount": {
+            "videoaccountid": 1,
+            "title": "PlexusMD Originals ",
+            "synopsis": "PlexusMD originals brings to you the premium quality content produced by PlexusMD in partnership with leading medical organizations.Join the fastest growing Healthcare network\nConnect and engage with doctors worldwide. Share updates and opportunities. Drive professional growth.\n",
+            "coverimage": [
+                "https://s2.postimg.org/8m8x1k3vt/18a1bb2.png",
+                "https://s2.postimg.org/8m8x1k3vt/18a1bb2.png",
+                "https://s17.postimg.org/at92boljz/Christmasat_Plexus_MD.jpg"
+            ],
+            "logo": "https://s3-ap-southeast-1.amazonaws.com/plexusmd/Images/common/testVideos/mediconference.jpg",
+            "thumbnail": "https://s2.postimg.org/3nlenb2qh/554216_original.jpg",
+            "price": 1,
+            "freetrialdays": 180,
+            "splitvideosbydate": 1,
+            "isactive": 1,
+            "createdon": "2017-11-16T15:57:35.000Z",
+            "modifiedon": "2017-11-16T15:57:39.000Z"
+        },
+        "sponsors": null,
+        "categorytags": null,
+        "specialties": null,
+        "authors": [
+            {
+                "videoauthorid": 8,
+                "videoid": 5,
+                "uaid": 1003,
+                "rank": 3,
+                "primary": 1,
+                "isactive": 1,
+                "createdon": "2017-12-12T17:36:53.000Z",
+                "modifiedon": "2017-12-12T17:36:57.000Z",
+                "providerprofile": {
+                    "prid": 23,
+                    "uaid": 1003,
+                    "orgid": 8483,
+                    "name": "Aarogyam Hospital",
+                    "logo": null,
+                    "address": "35, Veernagar Society Bhimjipura, Ahmedabad"
+                },
+                "professionalprofile": null
+            },
+            {
+                "videoauthorid": 16,
+                "videoid": 5,
+                "uaid": 346,
+                "rank": 3,
+                "primary": 0,
+                "isactive": 1,
+                "createdon": "2017-12-12T17:48:14.000Z",
+                "modifiedon": "2017-12-12T17:48:19.000Z",
+                "professionalprofile": {
+                    "pfid": 320,
+                    "firstname": "Sanjiv",
+                    "lastname": "Amin",
+                    "profilephoto": "Images/ProfilePicture/320/newS N Amin Photo.jpg",
+                    "currenttitle": "Consultant Rheumatologist",
+                    "summary": " ",
+                    "uaid": 346
+                },
+                "providerprofile": null
+            }
+        ],
+        "subscriptionactive": 0,
+        "viewinfo": null,
+        "totalviews": 0,
+        "likes": 0,
+        "comments": 0,
+        "liked": 0,
+        "bookmarked": 0,
+        "saveid": null,
+        "shares": 0
+   		}
+	   }
+	  )
+	}
 
 	 showText(){
 	 	this.setState({showLessTextHtml: !this.state.showLessTextHtml});
@@ -50,43 +147,46 @@ class ReactBootstrapStyle extends React.Component {
 
 			<div className="container-fluid">
 
-				<div className="row" style={{boxShadow:'10px 10px 8px #888888'}}>
+				<div className="row div_nav">
 
 					<CustomNavBar />					
 
 				</div>
 
-				<div class="row" style={{paddingTop:'1rem'}}>
+				<div class="row row_cont_video">
 				
 				  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 
-				  	<div class="row" style={{textAlign:'center'}}>
+				  	<div class="row div_video_icon">
 
-					  	<div class= "glyphicon glyphicon-play-circle" style={{position:'absolute', display:'block', marginRight:'auto', top:'10%', left:'25%', marginLeft:'auto', textAlign:'center', color:'white', fontSize:'10rem',width: '50%',height:'50%'}}>
+					  	<div class= "glyphicon glyphicon-play-circle play_btn" >
 
 					  	</div>
 
-					  	<img src="../../conference.jpg" style={{width:'100%'}}/>
+					  	<img src={this.state.videoObj.thumbnail} class="img_video"/>
 
 				  	</div>
 
 			  	  	<div class="row">
 
-			  		  	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style={{marginLeft:'3rem'}}>
+			  		  	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 div_name_lock">
 			  		  		
-			  		  		<h3 style={{fontSize:'2vmax'}}><b>Channel Name With all information lorem ipsum and word  &nbsp;</b>
+			  		  		<h3 class="hthree_name"><b>{this.state.videoObj.title}  &nbsp;</b>
 
-			  		  			<span class="glyphicon glyphicon-lock" aria-hidden="true">
+			  		  			{
+			  		  				this.state.videoObj.ispaid == 1 ? <span class="glyphicon glyphicon-lock" aria-hidden="true">
 			  		  			
-			  		  			</span>
+			  		  			</span> : ''
+			  		  			
+			  		  			}
 
 			  		  		</h3>
 
 			  		  	</div>
 			  		  	
-			  		  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style={{marginTop:'3rem', marginLeft:'0.8rem'}}>
+			  		  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 div_bookmark">
 							
-							<BookmarkButton />
+							<BookmarkButton isActive={this.state.videoObj.isactive}/>
 				  		  	
 			  		  	</div>
 
@@ -94,7 +194,7 @@ class ReactBootstrapStyle extends React.Component {
 
 			  	  	<div class="row">
 
-			  	  		<h4 style={{marginTop:0, marginLeft:'4.9rem', fontSize:'2em'}}>
+			  	  		<h4 class="hfour_vls">
 
 			  	  			<small>
 
@@ -125,7 +225,7 @@ class ReactBootstrapStyle extends React.Component {
 
 			  	  	<div class="row">
 
-			  	  		<h4 style={{ marginLeft:'4.9rem', marginRight: '4rem', fontSize:'100%'}}>
+			  	  		<h4 class="hfour_bigtext">
 
 			  	  			<BigText content_data={text}/>
 
@@ -133,13 +233,13 @@ class ReactBootstrapStyle extends React.Component {
 
 			  	  	</div>
 
-			  	  	<div class="row" style={{fontSize:'80%'}}>
+			  	  	<div class="row">
 
 			  	  		<FeaturedContributors />
 
 			  	  	</div>
 
-			  	  	<div class="row" style={{textAlign:'center', border:'1px solid black',  marginLeft:'3rem', marginRight:'3rem', marginTop:'2rem'}}>
+			  	  	<div class="row div_row_content" >
 
 			  	  		<Content />
 
@@ -161,7 +261,7 @@ class ReactBootstrapStyle extends React.Component {
 
 			  	  	</div>
 
-			  	  	<div class="row" style={{marginTop:'-1rem'}}>
+			  	  	<div class="row div_row_line">
 
 			  	  		<hr />
 

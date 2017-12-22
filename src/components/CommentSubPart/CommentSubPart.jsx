@@ -12,9 +12,9 @@ class CommentSubPart extends React.Component{
 
 			<div className="">
 
-	  	  		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 img_div" >
+	  	  		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 img_div_comment" >
 
-	  	  			<img src="../../mahadev_contributor.jpg" class="img-circle img_tag"/>
+	  	  			<img src="../../mahadev_contributor.jpg" class="img-circle img_tag_comment"/>
 	  	  		
 	  	  		</div>
 
