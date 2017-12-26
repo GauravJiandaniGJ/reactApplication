@@ -33,16 +33,6 @@ span - text tag
 	
 }
 
-.div_like:hover .icon_like{
-	color:white;
-	background-color: #fb583e;
-}
-
-.div_like:hover .text_like{
-	color:white;
-	background-color: #fb583e;
-}
-
 .div_like:hover{
 	cursor: pointer;
 }

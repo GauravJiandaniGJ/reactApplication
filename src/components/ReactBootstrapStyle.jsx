@@ -275,7 +275,7 @@ render(){
 						<FeaturedContributors contributors = {this.state.videoObj.authors}/>
 					</div>
 					<div class="row div_row_content" >
-						<Content content_details = {this.state.videoObj.videoaccount}/>
+						<Content content_details = {this.state.videoObj.videoaccount} contributors = {this.state.videoObj.authors} />
 					</div>
 					<div class="row">
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">

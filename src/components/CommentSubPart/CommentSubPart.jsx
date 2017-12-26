@@ -8,6 +8,8 @@ class CommentSubPart extends React.Component{
 
 	render(){
 
+		var createdOn = new Date(this.props.comments.createdon);
+
 		return(
 
 			<div className="">
@@ -34,7 +36,7 @@ class CommentSubPart extends React.Component{
 						<h5 class="hfive">
 							<small>
 
-							  				{this.props.comments.createdon} &nbsp;&nbsp;
+							  				{createdOn.getHours() + ':' + createdOn.getMinutes() + ':' + createdOn.getSeconds() + ' ' + createdOn.getDate() + '-' + createdOn.getMonth() + '-' + createdOn.getFullYear()} &nbsp;&nbsp;
 
 							  				
 								<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" ></span>

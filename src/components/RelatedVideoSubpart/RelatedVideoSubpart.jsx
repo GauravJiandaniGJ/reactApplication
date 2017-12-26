@@ -21,12 +21,12 @@ class RelatedVideoSubpart extends React.Component{
 							<img src="../../thumbnail.jpg" class="img-circle" style={{width:'100%'}}/>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style={{paddingLeft:'0rem',paddingRight:0}}>
-							<h3 style={{marginTop:'-2px', fontSize:'2.2em'}}>
+							<h3 style={{marginTop:'1px', fontSize:'2.2em'}}>
 								<small>Channel Name</small>
 							</h3>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style={{paddingLeft:'0rem',paddingRight:0}}>
-							<h3 style={{marginTop:'-2px', fontSize:'2.2em'}}>
+							<h3 style={{marginTop:'1px', fontSize:'2.2em'}}>
 								<small>91.2K
 
 												

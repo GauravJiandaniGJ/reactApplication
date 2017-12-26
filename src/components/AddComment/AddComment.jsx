@@ -10,7 +10,8 @@ class AddComment extends React.Component{
 		super(props);
 
 		this.state = {
-			newComment: ''
+			newComment: '',
+			count: 12664201
 		}
 	}
 

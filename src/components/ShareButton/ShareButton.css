@@ -31,12 +31,6 @@ span - text of share
 	font-size: 1.3em;
 }
 
-.div_share:hover .icon_share{
-	color: white;
-	background-color:#fb583e;
-}
-
-.div_share:hover .text_share{
-	color: white;
-	background-color:#fb583e; 
+.div_share{
+	cursor: pointer;
 }

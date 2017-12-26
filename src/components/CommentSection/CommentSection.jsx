@@ -61,9 +61,25 @@ class CommentSection extends React.Component{
 				"commentLikes": "2",
 				"isCommentLike": "0"
 			}
-			]
+			],
+			count: 12664201,
+			showEntireData: false ,
+			lastComment: []
 		}
 
+		this.sortData();
+		this.getLastComment()
+
+	}
+
+	sortData(){
+		var temp = this.state.comment_data;
+		temp.sort(function(a,b){
+		  // Turn your strings into dates, and then subtract them
+		  // to get a value that is either negative, positive, or zero.
+		  return a.pfid - b.pfid;
+		});
+		this.setState({comment_data: temp})
 	}
 
 	addData(data){
@@ -72,7 +88,7 @@ class CommentSection extends React.Component{
 		var temp = {
 			"pfcmid": "11419",
 			"pfpid": "31969",
-			"pfid": "12360992",
+			"pfid": this.state.count + 1,
 			"comment": data,
 			"createdon": current_time.getFullYear() +'-' + current_time.getMonth() + '-' + current_time.getDate() + ' ' + current_time.getHours() + ':' + current_time.getMinutes(),
 			"name": "Gaurav Jiandani",
@@ -84,27 +100,64 @@ class CommentSection extends React.Component{
 		var temp_arr = this.state.comment_data;
 		temp_arr.push(temp);
 		this.setState({comment_data: temp_arr});
+		this.setState({lastComment:temp})		
+	}
+
+	getLastComment(){
+		var size = this.state.comment_data.length;
+		var tempObj = this.state.comment_data[size - 1];
+		var temp = [];
+		temp['comment'] = tempObj['comment']
+		temp['commentLikes'] = tempObj['commentLikes']
+		temp['createdon'] = tempObj['createdon']
+		temp['name'] = tempObj['name']
+		temp['pfid'] = tempObj['pfid']
+		temp['prof_specialty'] = tempObj['prof_specialty']
+		temp['isCommentLike'] = tempObj['isCommentLike']
+		console.log(temp)
+		this.state.lastComment = temp;
+		this.setState({lastComment: temp});
+
+	}
+
+	showAllComments(){
+		this.setState({showEntireData: true})
 	}
 
 	render(){
+
 
 		return(
 
 			<div className="">
 				<AddComment addDataViaProp = {this.addData.bind(this)}/>
-				<div class="row hfour_row" >
-					<h4 class="hfour">View all {this.state.comment_data.length} comments</h4>
-				</div>
+				
 				{
 
+					this.state.showEntireData 
+
+					? 
+					
 					this.state.comment_data.map((comment) => (
 
-						<div class="row">
+						<div class="row afterShowAll" >
 							<CommentSubPart comments = {comment}/>
 						</div>		
-						
+							
 					))	
+
+					:
+					<div>
+						<div class="row hfour_row" >
+							<h4 class="hfour" onClick={this.showAllComments.bind(this)}>View all {this.state.comment_data.length} comments</h4>
+						</div>
+						<div class="row">
+							<CommentSubPart comments = {this.state.lastComment}/>
+						</div>
+					</div>
+
 				}
+				
 				
 			</div>
 

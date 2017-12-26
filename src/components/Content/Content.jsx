@@ -40,17 +40,22 @@ class Content extends React.Component{
 							<b>Contributors</b>
 						</h3>
 						<div class="row">
-							<SingleSingleContributor />
-							<SingleSingleContributor />
-							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-								<a href="#">
-									<div class="div_noOfItems">
-										<span class="span_items">
-											<b>&nbsp;+8</b>
-										</span>
-									</div>
-								</a>
-							</div>
+
+							{
+
+								this.props.contributors.map((items) => (
+
+									items.professionalprofile != undefined ? 
+
+									<div class="item active">
+										<SingleSingleContributor name_designation = {items.professionalprofile}/>
+									</div>	
+
+									: ''
+
+								))
+							}
+
 						</div>
 					</div>
 				</div>
@@ -70,7 +75,7 @@ class Content extends React.Component{
 						<div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-2 col-md-6 col-lg-6">
 							<a href="#">
 								<div class="div_subscribe">
-									<span class="glyphicon glyphicon-usd icon_subscribe">
+									<span class="icon_subscribe">
 
 									  		  		 Subscribe
 									  		  		
