@@ -23,6 +23,7 @@ div containing row that has video and play icon
 *******************************/
 .div_video_icon{
 	text-align: center;
+	left-margin:5px;
 }
 
 /*******************************
@@ -33,7 +34,7 @@ div containing play button
 	display: block;
 	left: 25%;
 	margin-right: auto;
-	top: 8%;
+	top: 10%;
 	margin-bottom: auto;
 	text-align: center;
 	color: white;
@@ -48,6 +49,7 @@ img - that has video image
 .img_video{
 	width: 100%;
 	max-height: 80%; 
+	padding-left: 10px;
 }
 
 

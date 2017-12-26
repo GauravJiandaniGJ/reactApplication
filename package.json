@@ -18,8 +18,10 @@
     "react-datetime": "^2.11.1",
     "react-dom": "^16.2.0",
     "react-loading-spinner": "^1.0.12",
+    "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
   },

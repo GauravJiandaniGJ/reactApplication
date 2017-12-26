@@ -6,6 +6,14 @@ require('./CommentSubPart.css')
 
 class CommentSubPart extends React.Component{
 
+	incrementLikeToParent(){
+		this.props.incrementLike(this.props.comments.pfid)
+	}
+
+	decrementLikeToParent(){
+		this.props.decrementLike(this.props.comments.pfid)	
+	}
+
 	render(){
 
 		var createdOn = new Date(this.props.comments.createdon);
@@ -40,7 +48,19 @@ class CommentSubPart extends React.Component{
 
 							  				
 								<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" ></span>
-								<span class="like_btn">&nbsp;&nbsp;Like &nbsp;&nbsp;</span>
+								
+								{
+
+									this.props.comments.isCommentLike == 0 ?
+
+									<span class="like_btn" onClick = {this.incrementLikeToParent.bind(this)}>&nbsp;&nbsp;Like &nbsp;&nbsp;</span>
+
+									:
+
+									<span class="like_btn" onClick = {this.decrementLikeToParent.bind(this)}>&nbsp;&nbsp;Unlike &nbsp;&nbsp;</span>
+
+								}
+								
 								<span class="glyphicon glyphicon-one-fine-dot" aria-hidden="true" >&nbsp;</span>
 								<span class="glyphicon glyphicon-thumbs-up like_btn"></span>
 								<span class="like_btn">&nbsp;&nbsp;{this.props.comments.commentLikes}</span>

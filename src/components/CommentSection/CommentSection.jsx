@@ -82,6 +82,34 @@ class CommentSection extends React.Component{
 		this.setState({comment_data: temp})
 	}
 
+	incrementLike(pfid){
+		var size = this.state.comment_data.length;
+		var temp = this.state.comment_data;
+		temp.forEach(function(item){
+			if(item.pfid == pfid){
+				var tmp = item.commentLikes;
+				item.commentLikes = parseInt(tmp) + 1;
+				item.isCommentLike = 1;
+			}
+		})
+		this.setState({comment_data:temp});
+		this.getLastComment()
+	}
+
+	decrementLike(pfid){
+		var size = this.state.comment_data.length;
+		var temp = this.state.comment_data;
+		temp.forEach(function(item){
+			if(item.pfid == pfid){
+				var tmp = item.commentLikes;
+				item.commentLikes = parseInt(tmp) - 1;
+				item.isCommentLike = 0;
+			}
+		})
+		this.setState({comment_data:temp});
+		this.getLastComment()
+	}
+
 	addData(data){
 		var current_time = new Date();
 		console.log(current_time)
@@ -95,7 +123,8 @@ class CommentSection extends React.Component{
 			"profilephoto": "../../../mahadev_contributor.jpg",
 			"gender": "male",
 			"prof_specialty": "ReactJS Specialist",
-			"commentLikes": 0
+			"commentLikes": 0,
+			"isCommentLike": 0
 		}
 		var temp_arr = this.state.comment_data;
 		temp_arr.push(temp);
@@ -141,7 +170,7 @@ class CommentSection extends React.Component{
 					this.state.comment_data.map((comment) => (
 
 						<div class="row afterShowAll" >
-							<CommentSubPart comments = {comment}/>
+							<CommentSubPart comments = {comment} incrementLike = {this.incrementLike.bind(this)} decrementLike = {this.decrementLike.bind(this)}/>
 						</div>		
 							
 					))	
@@ -152,7 +181,7 @@ class CommentSection extends React.Component{
 							<h4 class="hfour" onClick={this.showAllComments.bind(this)}>View all {this.state.comment_data.length} comments</h4>
 						</div>
 						<div class="row">
-							<CommentSubPart comments = {this.state.lastComment}/>
+							<CommentSubPart comments = {this.state.lastComment} incrementLike = {this.incrementLike.bind(this)} decrementLike = {this.decrementLike.bind(this)} />
 						</div>
 					</div>
 

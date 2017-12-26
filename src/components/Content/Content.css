@@ -14,6 +14,10 @@
     margin-left:0.01rem;
 }
 
+.tooltiptext:hover{
+    cursor: pointer;
+}
+
 .tooltiptext .icon_subscribe_tooltip{
         visibility: hidden;
         width: 120px;
@@ -177,6 +181,7 @@ div_subscribe div to subscribe
 
 .div_subscribe:hover {
     background-color: white;
+    cursor: pointer;
 }
 
 

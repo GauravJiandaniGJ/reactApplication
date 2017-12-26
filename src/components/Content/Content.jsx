@@ -73,15 +73,15 @@ class Content extends React.Component{
 					</div>
 					<div class="row">
 						<div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-2 col-md-6 col-lg-6">
-							<a href="#">
+							
 								<div class="div_subscribe">
 									<span class="icon_subscribe">
 
 									  		  		 Subscribe
 									  		  		
-									  		  		</span>
+									</span>
 								</div>
-							</a>
+							
 						</div>
 						<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4 div_tooltip">
 							<span class="tooltiptext">

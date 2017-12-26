@@ -10,7 +10,7 @@ col-3 image column
 h4, h5 name and designation
 ***************************/
 .name_designation{
-	margin-top: 0.03rem;
-	font-size: 2em;
+	margin-top: 0.5rem;
+	font-size: 1.8em;
 	margin-bottom: 0.2rem;
 }

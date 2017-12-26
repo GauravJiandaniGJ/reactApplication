@@ -36,10 +36,7 @@ class FeaturedContributors extends React.Component{
 						))	
 					}
 					</div>
-					<a class="right carousel-control a_prev" href="#myCarousel" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right icon"></span>
-						<span class="sr-only">Next</span>
-					</a>
+						
 					<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7"></div>
 				</div>
 			</div>
