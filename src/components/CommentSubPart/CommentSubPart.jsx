@@ -6,6 +6,18 @@ require('./CommentSubPart.css')
 
 class CommentSubPart extends React.Component{
 
+	constructor(props){
+		super(props);
+
+		this.state = {
+			comment: Object
+		}
+
+		this.setState({comment:this.props.comments})
+		console.log('comment sub part')
+		console.log(this.props.comments)
+	}
+
 	incrementLikeToParent(){
 		this.props.incrementLike(this.props.comments.pfid)
 	}

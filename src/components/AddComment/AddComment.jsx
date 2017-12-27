@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import { connect } from 'react-redux';
+import * as someActions from '../../actions';
+import { bindActionCreators } from 'redux';
+import {CommentSection} from '../CommentSection/CommentSection.jsx'
 require('../testing.css')
 require('./AddComment.css')
 
@@ -20,8 +23,8 @@ class AddComment extends React.Component{
 	}
 
 	addDataToComments(){
-		this.props.addDataViaProp(this.state.newComment)
-		this.state.newComment = ''
+		this.props.addComment(this.state.newComment)
+		this.setState({newComment: ''});
 	}
 
 	render(){
@@ -50,4 +53,8 @@ class AddComment extends React.Component{
 
 }
 
-export default AddComment;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(someActions, dispatch);
+}
+
+export default connect(null,mapDispatchToProps)(AddComment,CommentSection);
