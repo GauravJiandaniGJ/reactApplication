@@ -1,4 +1,4 @@
-import * as actionType from '../actions/ActionType';
+import * as actionType from '../Actions/ActionType';
 
 const viewAllCommentsReducer = (state = false, action) => {
   let newState;

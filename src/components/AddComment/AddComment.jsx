@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
-import * as someActions from '../../actions';
+import * as someActions from '../../Actions';
 import { bindActionCreators } from 'redux';
 import {CommentSection} from '../CommentSection/CommentSection.jsx'
 require('../testing.css')

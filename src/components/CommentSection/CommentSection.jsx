@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import CommentSubPart from '../CommentSubPart/CommentSubPart.jsx';
 import AddComment from '../AddComment/AddComment.jsx';
 import { connect } from 'react-redux';
-import * as someActions from '../../actions';
+import * as someActions from '../../Actions';
 import { bindActionCreators } from 'redux';
 
 require('../testing.css')

@@ -1,4 +1,4 @@
-import * as actionType from '../actions/ActionType';
+import * as actionType from '../Actions/ActionType';
 
 var comment_data = [
 {
